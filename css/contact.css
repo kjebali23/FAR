@@ -1,0 +1,158 @@
+*{
+  margin : 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.hero{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.5)), url(../img/collection.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  position : relative;
+}
+
+.nav-bar{
+  display: flex;
+  padding: 43px 98px;
+}
+
+.nav-logo img{
+  width : 85px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.nav-links{
+  flex: 1;
+}
+
+.nav-links ul{
+  margin-left: 90px;
+  display: inline;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 15px 25px;
+}
+
+.nav-links ul a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links ul a ::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #E50914;
+  display: block;
+  margin: auto;
+  transition: .5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.btn{
+  padding: 10px 15px;
+  border: 0;
+  background: #E50914;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+
+}
+
+.nav-links .btn{
+  float: right;
+}
+
+.banner-title{
+  margin: 80px 130px;
+  color: #fff;
+
+  margin-left: 250px;
+
+}
+
+.banner-title h1{
+  font-size: 64px;
+  margin-bottom: 30px;
+  text-align: left;
+
+
+
+}
+
+.banner-title span{
+  color: #E50914;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1);
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
